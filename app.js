@@ -18,7 +18,6 @@ let server = http.createServer(app);
 
 
 server.listen(port);
-server.on('listening', () => console.log('server start'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -27,4 +26,5 @@ app.use(cookieParser());
 app.use('/', index);
 app.use('/users', users);
 
-module.exports = app;
+server.on('listening', () => console.log('server start'));
+
