@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import {Switch, Route} from 'react-router-dom';
 
 import Routes from './routes.js';
-import './App.css';
 
 class App extends PureComponent {
   render() {
