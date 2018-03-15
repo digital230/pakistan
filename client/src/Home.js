@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {_} from 'underscore';
+import { connect } from 'react-redux';
 import moment from 'moment';
 import autoBind from 'react-autobind';
 
@@ -40,4 +41,8 @@ Home.propTypes = {
 
 };
 
-export default Home;
+function mapToProps(state) {
+  return {...state};
+}
+
+export default connect(mapToProps)(Home);
