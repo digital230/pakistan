@@ -1,5 +1,5 @@
-import About from './About';
-import Home from './Home';
+import About from './pages/About';
+import Home from './pages/Home';
 
 export default [
   {
